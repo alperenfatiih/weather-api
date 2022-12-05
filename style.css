@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  z-index: 0;
+}
+section {
+  display: flex;
+  justify-content: center;
+  margin: 115px 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  color: white;
+}
+.wrapper {
+  width: 400px;
+  height: 275px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+}
+
+.wrapper.active {
+  width: 400px;
+  height: 400px;
+  transition-duration: 0.1s;
+  transition-property: height;
+}
+
+.wrapper .header {
+  display: flex;
+  margin-top: 15px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .header i {
+  font-size: 20px;
+}
+.wrapper .header p {
+  margin: 50px 50px;
+
+  font-size: 20px;
+}
+.wrapper .header .defined {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: red;
+}
+.wrapper .header .success {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(9, 255, 0);
+}
+
+.wrapper .article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .article input {
+  width: 65%;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+.wrapper .article button {
+  width: 65%;
+  height: 30px;
+  color: white;
+  border: none;
+  background-color: rgb(177, 7, 148);
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+.wrapper .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 50px 0;
+  transition-delay: 3s;
+}
